@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>V!n@y - 16 </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <script src="https://kit.fontawesome.com/18fc5b7198.js" crossorigin="anonymous"></script> -->
+	<link rel="shortcut icon" type="image/ico" href="./favicon.ico">
+
+</head>
+<body>
+	<section>
+		<h2>hello </h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<button class="btn" >click here</button>
+	
+
+	<div class="popup">
+		<h2>
+			all the best dude....!
+			<br>
+			VINAY KUMAR P
+		</h2>	
+		<b class="close">X</b>
+	</div>
+
+</section>
+
+<canvas id="my-canvas"></canvas>
+
+
+
+<script type="text/javascript" src="index.min.js"></script>
+<script type="text/javascript">
+	
+	let btn=document.querySelector('.btn');
+	let popup=document.querySelector('.popup');
+	let close=document.querySelector('.close');
+	let canvas=document.querySelector('#my-canvas');	
+	btn.onclick=function(){
+		popup.classList.add('active');
+		canvas.classList.add('active');
+	}
+
+	close.onclick=function(){
+		popup.classList.remove('active');
+		canvas.classList.remove('active');
+	}
+
+var confettiSettings = { target: 'my-canvas' };
+var confetti = new ConfettiGenerator(confettiSettings);
+confetti.render();
+
+
+
+</script>
+</body>
+</html>
